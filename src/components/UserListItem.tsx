@@ -2,7 +2,7 @@ import Button from "./statics/Button.tsx";
 import {ChevronUpIcon} from "@heroicons/react/24/outline";
 import {Dialog} from "@headlessui/react";
 import {useState} from "react";
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 export type User = {
     name: string;

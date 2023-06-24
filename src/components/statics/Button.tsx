@@ -1,5 +1,5 @@
 import {JSX, MouseEventHandler, ReactElement} from "react";
-import * as classNames from "classnames";
+import classNames from "classnames";
 
 type ButtonProp = {
     children: string | JSX.Element;
