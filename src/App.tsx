@@ -25,11 +25,10 @@ function App() {
     return (
         <>
             <NavBar></NavBar>
-
             <main>
                 <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
                     <UserList items={users}/>
-                    <span className="text-sm text-gray-400 mt-3 inline-block">* You can click the row to see personal information</span>
+                    <span className="mx-5 sm:mx-0 text-sm text-gray-400 mt-3 inline-block">* You can click the row to see personal information</span>
                 </div>
             </main>
         </>
