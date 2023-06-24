@@ -35,7 +35,7 @@ function UserListItem(props: User) {
         <div className="flex items-center justify-between select-none py-2 px-4">
             <div className="flex items-center">
                 <span className={classNames(
-                    'text-xl',
+                    'text-xl mr-4 sm:mr-0',
                     props.position === 1 ? 'font-bold text-yellow-600' : 'text-gray-800'
                 )}>
                     #{props.position}
@@ -59,10 +59,10 @@ function UserListItem(props: User) {
                         <Dialog.Description className="text-center">If you accept this method, you will be voting for the selected user!</Dialog.Description>
 
                         <div className="flex gap-x-2 justify-end mt-5">
-                            <Button onClick={denyModal} className="bg-red-500 border-0 text-white shadow hover:bg-red-700">
+                            <Button onClick={denyModal} className="!bg-red-500 border-0 text-white shadow hover:bg-red-700">
                                 Deny
                             </Button>
-                            <Button onClick={acceptModal} className="bg-indigo-500 border-0 text-white drop-shadow-2xl hover:bg-indigo-600">
+                            <Button onClick={acceptModal} className="!bg-indigo-500 border-0 text-white drop-shadow-2xl hover:bg-indigo-600">
                                 Accept
                             </Button>
                         </div>
